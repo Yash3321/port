@@ -1,28 +1,32 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
-    /* transition: 0.3s */
-    
+    transition: 1s
+
 
     /* box-sizing: border-box ; */
     /* border: 2px solid black; */
 }
-body{
+
+body {
     font-family: "poppins", sans-serif;
-        
+
 }
-nav{
-    position: fixed;
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+
     width: 100%;
     font-weight: bold;
     background-color: #fff;
-    box-shadow:0 1px 4px rgba(146, 161, 176, 0.15)
-    
-    
-    
-
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15)
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,101 +34,231 @@ nav{
     align-items: center;
     margin-right: 120px;
     margin-left: 120px;
-    position: relative;
-    z-index: -1;
+    /* position: relative; */
     
-    
+
+
 }
-.nav_links{
+ 
+#home{
+    scroll-margin-top: 80px;
+    /* scroll-margin-block: 100px; */
+    
+
+}
+#about{
+    scroll-margin-top: 100px;
+}#skills{
+    scroll-margin-top: 90px;
+}#work{
+    scroll-margin-top: 90px;
+}#contact{
+    scroll-margin-top: 90px;
+}
+
+.nav_links {
     width: 40%;
 
 }
-.nav_links ul{
+
+.nav_links ul {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
-    color: black;    
-}
-.home_title-color{
-color: #3e6ff4;
+    color: black;
 }
 
-.home_title{
-    margin-top: 100px;
-    font-size: 2.5rem
+.home_title-color {
+    color: #3e6ff4;
+}
 
+svg{
+    margin-top: 80px;
+    /* background-color: red; */
+    height: 25rem;
+}
+.home__blob {
+    fill: #3e6ff4;
+  }
+.home_title {
+
+    margin-top: 80px;
+    font-size: 2.2rem
     
+
 }
-.profile_img{
+
+.profile_img {
     margin-top: 100px;
     /* height: ; */
     /* width: 25%; */
     /* height: 10rem; */
-    background-color:#3e6ff4;
+    background-color: #3e6ff4;
 }
-#home{
+
+#home {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5rem;
+    /* margin-top: 5rem; */
     height: 34.5rem;
     /* background-color: gray; */
-      
+
 }
-.about{
+
+/* home ends  */
+
+.about {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     /* background-color: pink; */
     margin-top: 20px;
     /* position: relative; */
     /* z-index: 12; */
     height: 15rem;
-}
-
-.image2{
-    background-color: red;
-    width: 25rem;
-    height: 15rem ;
     margin-bottom: 10rem;
-    margin-left: 10rem;
-}
-.skill{
-    display: flex;
-    justify-content: space-around;
-}
-/* .work{
-    display: flex;
-    justify-content: space-between;
 
-} */
-.totalimg{
+}
+
+.aboutheading {
+    display: flex;
+    align-items: center;
+}
+
+.about2 {
     display: flex;
     justify-content: space-around;
+    width: 65%;
+    column-gap: 5rem;
+}
+
+.image2 {
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    width: 50rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    
+
+    /* margin-left: 10rem; */
+}
+.image2 img{
+    border-radius: 1rem;
+    /* border: 2px solid black; */
+}
+/* about ends  */
+.pic img{
+    margin-right: 5rem;
+    height: 20rem;
+    border-radius: 1rem;
+    width: 30rem;
+    /* border: 2px solid black */
+    
+    
+    
+}
+.skill {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    
+    margin-top: 3rem;
+}
+
+
+.totalimg {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     background-color: blue;
-    width: 100%;
-    height: 50%;
+    /* width: 100%; */
+    width: 50%;
 }
 
-.contact{
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* justify-content: space-around; */
+    justify-content: center;
+    margin-bottom: 3rem;
+    transition: 1s;
+    /* overflow: hidden; */
+    
+    
+    /* background-color: blue; */
+    /* flex-wrap: wrap; */
+    /* border-radius: 10px; */
+
+    /* width: 50%; */
+    /* flex-direction: column; */
+}
+.container img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    
+    
+    
+}
+#img1 {
+    border-radius: 1rem;
+
+}
+
+#img2 {
+    border-radius: 1rem;
+
+}
+
+#img3 {
+    border-radius: 1rem;
+
+}
+
+#img4 {
+    border-radius: 1rem;
+
+}
+
+#img5 {
+    border-radius: 1rem;
+
+}
+
+#img6 {
+    border-radius: 1rem;
+
+}
+
+
+
+
+/* total ends  */
+
+
+.contact {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
-.section_title{
+.section_title {
     text-align: center;
-    text-decoration:underline;
+    text-decoration: underline;
     color: #3e6ff4;
-    font-weight: bold;
+    font-weight: 900;
 }
 
-button{
+button {
     display: inline-block;
     border: 0px;
     background-color: #527ef6;
@@ -135,7 +269,12 @@ button{
     border-radius: 0.5rem;
     transition: 0.3s
 }
-.downbutton{
+
+button:hover {
+    cursor: pointer;
+}
+
+.downbutton {
     border: 0px;
     background-color: #527ef6;
     color: white;
@@ -146,52 +285,85 @@ button{
     transition: 0.3s
 }
 
-.Contactcolor{
+.Contactcolor {
     color: #fff;
 }
-.footer{
+
+.footer {
     color: white;
-    height: 15rem;
+    height: 13rem;
     background-color: hsl(224, 56%, 12%);
     text-align: center;
     padding: 0.5rem;
     font-weight: bold;
     margin-top: 30px;
-    
+
 }
-.footer_title{
+
+.footer_title {
     font-size: 2rem;
     margin-bottom: 3rem;
     margin-top: 1rem;
 }
-.social_icons{
+
+.social_icons {
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
 }
-.social_links{
+
+.social_links {
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-size: 1rem;
-    
-}
-.fa {  
-    padding: 20px;  
-    margin: 5px    
 
-  }  
-  .fa-facebook {  
-    color: white;  
-  } 
-  .fa-instagram {  
-    color: white;  
-  } 
-  .fa-twitter {  
-    color: white;  
-  } 
-  .fa-linkedin {  
-    color: black;  
-  } 
-  .fa-behance {  
-    color: black;  
-  } 
+}
+
+.fa {
+    padding: 20px;
+    margin: 5px
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-linkedin {
+    color: black;
+}
+
+.fa-behance {
+    color: black;
+}
+
+
+input {
+    border-radius: 5px;
+    height: 2rem;
+    width: 20rem;
+    border: 1.5px solid black;
+
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1.5px solid black;
+    width: 20rem;
+}
+
+/* .placeholder {
+    font-weight: bold;
+} */
+
+/* #img1{
+    height: 100px;
+    width: 100px;
+  } */
